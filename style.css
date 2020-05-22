@@ -1,0 +1,61 @@
+:root {
+  --main-bg-color: #0085a1;
+  --secondary-bg-color: #fef4fc;
+  --nav-bg-color: #0085a1;
+  --main-text-color: #eee;
+  --headings-color: #5b2f3d
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--main-text-color);
+}
+
+nav {
+  position: sticky;
+  background: var(--main-bg-color);
+  top: 0;
+  height: 50px;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+
+#welcome-section {
+  background: url("galaxy-blank.png") var(--main-bg-color);
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+#welcome-section p {
+  font-size: 3rem;
+}
+
+.small {
+  max-width: 5vw;
+  margin: 15px auto;
+  border-top: 4px solid #eeeeee;
+  height: 0;
+}
+
+footer {
+  text-align: center;
+  width: 100%;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 10px;
+}
+
+#logo {
+  height: 50px;
+}
