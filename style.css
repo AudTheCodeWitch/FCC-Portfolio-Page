@@ -1,21 +1,45 @@
 :root {
-  --main-bg-color: #0085a1;
-  --secondary-bg-color: #fef4fc;
-  --nav-bg-color: #0085a1;
-  --main-text-color: #eee;
-  --headings-color: #5b2f3d
+  --main-border-color: #0085a1;
+  --main-bg-color: #eee;
+  --nav-bg-color: #eee;
+  --main-text-color: black;
+  --headings-color: #0085a1
 }
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: var(--main-text-color);
+  background-color: var(--main-bg-color);
+}
+
+header {
+  color: #eee;
 }
 
 nav {
   position: sticky;
-  background: var(--main-bg-color);
+  background: var(--nav-bg-color);
   top: 0;
   height: 50px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  color: var(--headings-color);
 }
 
 h1 {
@@ -45,6 +69,27 @@ h1 {
   border-top: 4px solid #eeeeee;
   height: 0;
 }
+
+h2 {
+  color: var(--headings-color);
+  text-align: center;
+}
+
+.project-tile {
+  border: 3px dotted var(--main-border-color);
+  border-radius: 25px;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.project-tile a {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  color: var(--headings-color);
+}
+
 
 footer {
   text-align: center;
